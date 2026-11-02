@@ -9,12 +9,14 @@
 - 芒果TV：电影、电视剧、综艺、动漫
 - 优酷：从优酷首页当前“热度榜”模块读取电影、电视剧、综艺、动漫
 
-线上地址：
+部署后地址示例：
 
 ```text
-面板：https://pan.qbb365.xyz/rank-api/
-API 文档：https://pan.qbb365.xyz/rank-api/docs
+面板：https://rank.example.com/rank-api/
+API 文档：https://rank.example.com/rank-api/docs
 ```
+
+`rank.example.com`、`18893`、`8891` 等均为示例值，部署时应替换为自己的域名和端口。
 
 面板支持平台切换、电影/电视剧/综艺/动漫分类、搜索、排序、最低评分和分页，
 海报由服务端代理，避免上游图片防盗链导致封面空白。

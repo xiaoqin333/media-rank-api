@@ -51,7 +51,7 @@ web portal with Nginx:
 
 ```nginx
 sub_filter_once on;
-sub_filter '</body>' '<script src="https://pan.qbb365.xyz/rank-api/portal-widget.js" defer></script></body>';
+sub_filter '</body>' '<script src="https://rank.example.com/rank-api/portal-widget.js" defer></script></body>';
 sub_filter_types text/html;
 proxy_set_header Accept-Encoding "";
 ```
