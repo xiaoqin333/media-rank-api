@@ -1,0 +1,14 @@
+[Unit]
+Description=Reverse SSH tunnel for standalone media ranking API
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/ssh -NT -o BindInterface=enp2s0 -o ExitOnForwardFailure=yes -o ServerAliveInterval=20 -o ServerAliveCountMax=3 -o TCPKeepAlive=yes -o ConnectTimeout=10 -o StrictHostKeyChecking=accept-new -o Compression=no -i /root/.ssh/id_ed25519 -R 18893:127.0.0.1:8891 root@YOUR_ENTRY_HOST
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

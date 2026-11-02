@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+rank-api.env
+.env
+*.log
+.DS_Store
